@@ -1,2 +1,0 @@
-# Solum
- game about loneliness
