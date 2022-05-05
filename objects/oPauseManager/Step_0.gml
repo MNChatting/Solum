@@ -14,11 +14,11 @@ else {global.pause = 0;
 	var _width = 600;
     var _height = 200;
 
-	create_button(640, 180 + addthis, _width, _height, "Resume", on_click); // <- Do not include ()
+	create_button(640, 180 + addthis, _width, _height, "[#252525][scale,2][fa_centre][fa_middle]Resume", on_click); // <- Do not include ()
 
-	create_button(640, 450 + addthis, _width, _height, "Save", on_click);
+	create_button(640, 450 + addthis, _width, _height, "[#252525][scale,2][fa_centre][fa_middle]Save", on_click);
 
-	create_button(640, 720 + addthis, _width, _height, "Quit", on_click);
+	create_button(640, 720 + addthis, _width, _height, "[#252525][scale,2][fa_centre][fa_middle]Quit", on_click);
 	
 	}
 	else {instance_destroy(oButton);}
