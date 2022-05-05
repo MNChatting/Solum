@@ -2,7 +2,7 @@
 timer -= 1;
 
 //escape will be moved later to pause
-if(keyboard_check_pressed(vk_escape))
+if(keyboard_check_pressed(ord("P")))
 {
 game_end()
 }
