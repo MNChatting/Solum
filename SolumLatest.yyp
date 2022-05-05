@@ -71,7 +71,6 @@
     {"id":{"name":"__ChatterboxClassInstruction","path":"scripts/__ChatterboxClassInstruction/__ChatterboxClassInstruction.yy",},"order":0,},
     {"id":{"name":"sWater","path":"sprites/sWater/sWater.yy",},"order":12,},
     {"id":{"name":"fMe","path":"fonts/fMe/fMe.yy",},"order":2,},
-    {"id":{"name":"oPause","path":"objects/oPause/oPause.yy",},"order":4,},
     {"id":{"name":"scribble_font_bake_outline","path":"scripts/scribble_font_bake_outline/scribble_font_bake_outline.yy",},"order":0,},
     {"id":{"name":"ApartmentLv1","path":"rooms/ApartmentLv1/ApartmentLv1.yy",},"order":2,},
     {"id":{"name":"ChatterboxSelect","path":"scripts/ChatterboxSelect/ChatterboxSelect.yy",},"order":5,},
@@ -102,7 +101,7 @@
     {"id":{"name":"scribble_font_has_character","path":"scripts/scribble_font_has_character/scribble_font_has_character.yy",},"order":3,},
     {"id":{"name":"ChatterboxSourceGetTags","path":"scripts/ChatterboxSourceGetTags/ChatterboxSourceGetTags.yy",},"order":6,},
     {"id":{"name":"__ChatterboxVM","path":"scripts/__ChatterboxVM/__ChatterboxVM.yy",},"order":7,},
-    {"id":{"name":"oManager","path":"objects/oManager/oManager.yy",},"order":5,},
+    {"id":{"name":"oPauseManager","path":"objects/oPauseManager/oPauseManager.yy",},"order":5,},
     {"id":{"name":"__ChatterboxSystem","path":"scripts/__ChatterboxSystem/__ChatterboxSystem.yy",},"order":6,},
     {"id":{"name":"Methods_Quick_Reference","path":"notes/Methods_Quick_Reference/Methods_Quick_Reference.yy",},"order":6,},
     {"id":{"name":"ChatterboxGetCurrentMetadata","path":"scripts/ChatterboxGetCurrentMetadata/ChatterboxGetCurrentMetadata.yy",},"order":4,},
@@ -190,11 +189,7 @@
   "TextureGroups": [
     {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
   ],
-  "IncludedFiles": [
-    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"fMe.yy","resourceType":"GMIncludedFile",},
-    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"fSans.yy","resourceType":"GMIncludedFile",},
-    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"fUglyBoy.yy","resourceType":"GMIncludedFile",},
-  ],
+  "IncludedFiles": [],
   "MetaData": {
     "IDEVersion": "2.3.2.560",
   },
