@@ -2,20 +2,23 @@ function on_click() {
 	
 	show_debug_message("Button clicked: " + text);	
 	
-	if(text == "[#252525][scale,2][fa_centre][fa_middle]Resume")
+	if(global.highy = 288)
 	{
 	global.unpause = true;
+
 	}
 	
-	if(text == "[#252525][scale,2][fa_centre][fa_middle]Save")
+		if(global.highy = 288 + 300)
 	{
-	show_message("i am trying but its hard to make it save states")
+	    show_message("this worjks???")
+
 	}
 	
-	if(text == "[#252525][scale,2][fa_centre][fa_middle]Quit")
+		if(global.highy = 288 + 300 + 300)
 	{
-	game_end()
+	     game_end()
+
 	}
-
-
+	
+	
 }

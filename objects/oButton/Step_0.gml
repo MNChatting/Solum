@@ -5,7 +5,7 @@ var ishover = point_in_rectangle(mouseX, mouseY, x, y, x + width, y + height);
 var clicked = ishover && mouse_check_button_pressed(mb_left);
 
 var highlight = point_in_rectangle(900, global.highy, x, y, x + width, y + height)
-var buttonpress =  highlight && gamepad_button_check_pressed(0, gp_face3);
+var buttonpress =  highlight && gamepad_button_check_pressed(0, gp_face3) || keyboard_check_pressed(vk_enter);
 
 // Hover
 hover = lerp(hover, ishover || highlight, 0.1); //lerp() is used to blend between two values
