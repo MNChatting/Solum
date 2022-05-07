@@ -1,7 +1,7 @@
 if(readonce == false)
 {
 text = 
-"[#252525]thats right we know have [wave]working[/wave] text boxes[pause] testing that this works too, turns out i need more filler text cause i need to test box limits and whether this text is going to over lap on the text box tho i am very doubtful it will"
+"[#252525][wave]You did it!![/wave] you opened the dialogue box! pressing x again will progress the text[pause]           you are so smart :)"
 
 profile  = "[sProfileFace1]"
 }

@@ -1,7 +1,7 @@
 if(readonce == false)
 {
 text = 
-"[#252525]Thanks for playing our demo you have eached the end of the [wave]playroom[/wave]."
+"[#252525]Thanks for playing our demo you have reached the end of the [wave]playroom[/wave]."
 
 profile  = "[sPopCat]"
 }
