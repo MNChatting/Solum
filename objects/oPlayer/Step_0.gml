@@ -42,7 +42,12 @@ if (dashunlocked == true)
  hsp = move * dashspd;
  jacobstopper = false;
  mollystopper = false;
- sprite_index = sPlayerDash;
+ 
+ if(lastpressed = "left")
+ {sprite_index = sPlayerDashL;}
+ 
+  if(lastpressed = "right")
+  {sprite_index = sPlayerDashR;}
 }}
 //----------------------------------------------------------------
 if (onGround = 1 && move = 0)
