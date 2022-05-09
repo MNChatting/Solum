@@ -9,6 +9,8 @@ mvtlock = 0; //stops the player from bugging wall jump
 dashspd = 15;
 dashduration = 0;
 
+lastpressed = "none";
+
 jumps = 0;
 jumpsmax = 2;
 mollystopper = true;
