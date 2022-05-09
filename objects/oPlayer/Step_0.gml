@@ -20,7 +20,7 @@ var onGround = place_meeting(x,y+1,ointeractController);
 var dash = keyboard_check_pressed(ord("Q")) ||  gamepad_button_check_pressed(0, gp_face2);
 
 var InWater = place_meeting(x,y-16,oWater);
-var onSlide = place_meeting(x,y+1,oSlide);
+var onSlide = place_meeting(x,y+2,oSlide);
 
 var Death = place_meeting(x,y+1,oDeath);
 var Respawn = place_meeting(x,y,oRespawn);
@@ -57,11 +57,11 @@ if(onGround = 1 && move = -1)
 { image_angle = 0;
 	sprite_index = sPlayerWalkinL;}
 	
-if(onWall = 1 && onGround = 0 && lastpressed = "left")
+if(onWall = 1 && onGround = 0 && lastpressed = "left" && sprite_index != sPlayerSlide)
 {	image_angle = 0;
 	sprite_index = sPlayerWallL;}
 
-if(onWallExtra = 1 && onGround = 0 && lastpressed = "right")
+if(onWallExtra = 1 && onGround = 0 && lastpressed = "right" && sprite_index != sPlayerSlide)
 {	image_angle = 0;
 	sprite_index = sPlayerWallR;}
 
@@ -157,7 +157,7 @@ if (place_meeting(x+hsp,y,ointeractController)) //checks 4 collison between obje
 	
 }
 x = x + hsp;
-
+//----------------------------------------------------------------
 //vetial collision section
 if (place_meeting(x,y+vsp,ointeractController))
 {
