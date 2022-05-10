@@ -118,7 +118,7 @@ if (mvtlock <= 0 && dashduration <= 0 && global.pause == 0 && dying == false) //
 //----------------------------------------------------------------
 	if (key_jump && jumps != jumpsmax) 
 	{
-		audio_play_sound(jump,1,false);
+		//audio_play_sound(jump,1,false);
 		image_angle = 0;
 		sprite_index = sPlayerJump;
 		//----------------------------------------------------------------
@@ -154,7 +154,7 @@ if (place_meeting(x+hsp,y,ointeractController)) //checks 4 collison between obje
 {
 	while (!place_meeting(x+sign(hsp),y,ointeractController))//moving as close as you can
 	{
-	x = x + sign(hsp);	
+	x = x + sign(hsp);
 	}
 	
 	hsp = 0;
