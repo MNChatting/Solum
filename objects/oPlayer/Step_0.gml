@@ -118,6 +118,7 @@ if (mvtlock <= 0 && dashduration <= 0 && global.pause == 0 && dying == false) //
 //----------------------------------------------------------------
 	if (key_jump && jumps != jumpsmax) 
 	{
+		audio_play_sound(jump,1,false);
 		image_angle = 0;
 		sprite_index = sPlayerJump;
 		//----------------------------------------------------------------
