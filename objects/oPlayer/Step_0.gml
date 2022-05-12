@@ -50,6 +50,15 @@ if (dashunlocked == true)
   {sprite_index = sPlayerDashR;}
 }}
 //----------------------------------------------------------------
+
+if (onGround = 0)
+{ image_angle = 0;
+	if(lastpressed = "left")
+	{sprite_index = sPlayerJumpL;}
+	if(lastpressed = "right")
+	{sprite_index = sPlayerJumpR;}
+}
+
 if (onGround = 1 && move = 0)
 { image_angle = 0;
 	sprite_index = sPlayerIdle;}
@@ -120,7 +129,10 @@ if (mvtlock <= 0 && dashduration <= 0 && global.pause == 0 && dying == false) //
 	{
 		//audio_play_sound(jump,1,false);
 		image_angle = 0;
-		sprite_index = sPlayerJump;
+		if(lastpressed = "left")
+		{sprite_index = sPlayerJumpL;}
+		if(lastpressed = "right")
+		{sprite_index = sPlayerJumpR;}
 		//----------------------------------------------------------------
 		if (jumpsunlocked = true)
 		{ if (jumps = 1)
