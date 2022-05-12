@@ -51,13 +51,7 @@ if (dashunlocked == true)
 }}
 //----------------------------------------------------------------
 
-if (onGround = 0)
-{ image_angle = 0;
-	if(lastpressed = "left")
-	{sprite_index = sPlayerJumpL;}
-	if(lastpressed = "right")
-	{sprite_index = sPlayerJumpR;}
-}
+
 
 if (onGround = 1 && move = 0)
 { image_angle = 0;
