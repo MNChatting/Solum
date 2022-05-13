@@ -178,8 +178,8 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"PlayRoom","path":"rooms/PlayRoom/PlayRoom.yy",},},
-    {"roomId":{"name":"GameStart","path":"rooms/GameStart/GameStart.yy",},},
     {"roomId":{"name":"ApartmentLv1","path":"rooms/ApartmentLv1/ApartmentLv1.yy",},},
+    {"roomId":{"name":"GameStart","path":"rooms/GameStart/GameStart.yy",},},
     {"roomId":{"name":"CameraRoom","path":"rooms/CameraRoom/CameraRoom.yy",},},
   ],
   "Folders": [
