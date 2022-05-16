@@ -1,4 +1,5 @@
 menuOpen = false;
+scribble_font_add("fCozette");
 
 addthis = 64;
 global.pause = 0;

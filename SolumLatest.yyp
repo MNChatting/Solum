@@ -57,6 +57,7 @@
     {"id":{"name":"ChatterboxGetOptionMetadata","path":"scripts/ChatterboxGetOptionMetadata/ChatterboxGetOptionMetadata.yy",},"order":9,},
     {"id":{"name":"sProfileFace1","path":"sprites/sProfileFace1/sProfileFace1.yy",},"order":5,},
     {"id":{"name":"sPlayerWallL","path":"sprites/sPlayerWallL/sPlayerWallL.yy",},"order":14,},
+    {"id":{"name":"ApartmentsIntro","path":"rooms/ApartmentsIntro/ApartmentsIntro.yy",},"order":5,},
     {"id":{"name":"sProfileFace2","path":"sprites/sProfileFace2/sProfileFace2.yy",},"order":6,},
     {"id":{"name":"ChatterboxFastForward","path":"scripts/ChatterboxFastForward/ChatterboxFastForward.yy",},"order":1,},
     {"id":{"name":"scribble_rgb_to_bgr","path":"scripts/scribble_rgb_to_bgr/scribble_rgb_to_bgr.yy",},"order":1,},
@@ -177,8 +178,9 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"ApartmentLv1","path":"rooms/ApartmentLv1/ApartmentLv1.yy",},},
+    {"roomId":{"name":"ApartmentsIntro","path":"rooms/ApartmentsIntro/ApartmentsIntro.yy",},},
     {"roomId":{"name":"PlayRoom","path":"rooms/PlayRoom/PlayRoom.yy",},},
+    {"roomId":{"name":"ApartmentLv1","path":"rooms/ApartmentLv1/ApartmentLv1.yy",},},
     {"roomId":{"name":"GameStart","path":"rooms/GameStart/GameStart.yy",},},
     {"roomId":{"name":"CameraRoom","path":"rooms/CameraRoom/CameraRoom.yy",},},
   ],
