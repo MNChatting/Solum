@@ -51,9 +51,7 @@ if (dashunlocked == true)
 }}
 //----------------------------------------------------------------
 
-
-
-if (onGround = 1 && move = 0)
+if (onGround = 1 && move = 0 && sprite_index != sPlayerJumpR)
 { image_angle = 0;
 	sprite_index = sPlayerIdle;}
 	
@@ -74,9 +72,9 @@ if(onWallExtra = 1 && onGround = 0 && lastpressed = "right" && sprite_index != s
 	sprite_index = sPlayerWallR;}
 
 if(!onWall = 1 && !onGround = 1 && sprite_index = sPlayerWallL)
-{sprite_index = sPlayerIdle;}
+{sprite_index = sPlayerJumpL;}
 if(!onWallExtra = 1 && !onGround = 1 && sprite_index = sPlayerWallR)
-{sprite_index = sPlayerIdle;}
+{sprite_index = sPlayerJumpR;}
 
 if(InWater = 1 && swimunlocked == true)
 {	image_angle = 0;
@@ -122,8 +120,9 @@ if (mvtlock <= 0 && dashduration <= 0 && global.pause == 0 && dying == false) //
 	if (key_jump && jumps != jumpsmax) 
 	{
 		//audio_play_sound(jump,1,false);
-		image_angle = 0;
+		
 		image_index = 0;
+		image_angle = 0;
 		if(lastpressed = "left")
 		{sprite_index = sPlayerJumpL;}
 		if(lastpressed = "right")
@@ -137,7 +136,7 @@ if (mvtlock <= 0 && dashduration <= 0 && global.pause == 0 && dying == false) //
 		    }
 		}
 		//----------------------------------------------------------------
-		if (onGround = 1)
+		if (onGround = 1 && onSlide = 0)
 		{vsp = -12;
 		 jumps = 1;
 		}
