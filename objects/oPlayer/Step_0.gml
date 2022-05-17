@@ -122,7 +122,7 @@ if (mvtlock <= 0 && dashduration <= 0 && global.pause == 0 && dying == false) //
 		//audio_play_sound(jump,1,false);
 		
 		image_index = 0;
-		image_angle = 0;
+		//image_angle = 0;
 		if(lastpressed = "left")
 		{sprite_index = sPlayerJumpL;}
 		if(lastpressed = "right")
