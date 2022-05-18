@@ -20,8 +20,8 @@ respawn_x = x;
 respawn_y = y;
 dying = false;
 
-jumpsunlocked = true;
-dashunlocked = true;
+jumpsunlocked = false;
+dashunlocked = false;
 swimunlocked = false;
 
 room_speed = 60;

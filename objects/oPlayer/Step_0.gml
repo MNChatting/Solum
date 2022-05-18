@@ -8,7 +8,7 @@ if(keyboard_check_pressed(ord("P")))
 game_end()
 }
 //----------------------------------------------------------------
-key_left = keyboard_check(vk_left) || (gamepad_axis_value(0,gp_axislh) < 0) ; //first function yellow text //vk = virtual keyboard
+key_left = keyboard_check(vk_left) || (gamepad_axis_value(0,gp_axislh) < 0); //first function yellow text //vk = virtual keyboard
 key_right = keyboard_check(vk_right) || (gamepad_axis_value(0,gp_axislh) > 0);
 key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1); //checking whether key is being pressed not held
 
@@ -25,6 +25,16 @@ var onSlide = place_meeting(x,y+2,oSlide);
 var Death = place_meeting(x,y+1,oDeath);
 var Respawn = place_meeting(x,y,oRespawn);
 //----------------------------------------------------------------
+
+if(keyboard_check_pressed(vk_left) || (gamepad_axis_value(0,gp_axislh) < 0))
+{lastpressed = "left";}
+
+if(keyboard_check_pressed(vk_right) || (gamepad_axis_value(0,gp_axislh) > 0))
+{lastpressed = "right";}
+
+
+//----------------------------------------------------------------
+
 mvtlock = max(mvtlock - 1, 0);
 dashduration = max(dashduration - 1, 0);
 
@@ -51,9 +61,13 @@ if (dashunlocked == true)
 }}
 //----------------------------------------------------------------
 
-if (onGround = 1 && move = 0 && sprite_index != sPlayerJumpR)
+if (onGround = 1 && move = 0 && lastpressed = "right")
 { image_angle = 0;
-	sprite_index = sPlayerIdle;}
+	sprite_index = sPlayerIdleR;}
+	
+	if (onGround = 1 && move = 0 && lastpressed = "left")
+{ image_angle = 0;
+	sprite_index = sPlayerIdleL;}
 	
 if(onGround = 1 && move = 1)
 { image_angle = 0;
@@ -122,6 +136,7 @@ if (mvtlock <= 0 && dashduration <= 0 && global.pause == 0 && dying == false) //
 		//audio_play_sound(jump,1,false);
 		
 		image_index = 0;
+		image_angle = 0;
 		//image_angle = 0;
 		if(lastpressed = "left")
 		{sprite_index = sPlayerJumpL;}
