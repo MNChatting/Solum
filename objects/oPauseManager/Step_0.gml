@@ -1,5 +1,6 @@
 /// @description 
-if (keyboard_check_pressed(vk_escape)) || (gamepad_button_check_pressed(0, gp_start)){
+if(((keyboard_check_pressed(vk_escape)) || (gamepad_button_check_pressed(0, gp_start))) && global.textbox == false)
+{
 	menuOpen = !menuOpen;
 	
 if(global.pause == 0)

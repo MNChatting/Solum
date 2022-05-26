@@ -5,6 +5,7 @@ addthis = 64;
 global.pause = 0;
 global.unpause = false;
 global.highy = 288;
+global.textbox = false;
 pressedpause = false;
 
 ishigh = 1;

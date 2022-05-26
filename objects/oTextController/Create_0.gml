@@ -8,7 +8,7 @@ readonce = false;
 
 scribble_font_add("fCozette");
 
-textboxsprite = scribble("[sTextBox]");
+textboxsprite = scribble("[scale,2][sTextBox][/scale]");
 textprofilesprite = scribble("[sTextProfile]");
 
 element4 = scribble(text).typewriter_in(0.3,1)

@@ -14,7 +14,7 @@ profile  = "[sProfileFace1]"
 }
 
 
-if(keyboard_check_pressed(vk_up) ||  gamepad_button_check_pressed(0, gp_face3))
+if((keyboard_check_pressed(vk_up) ||  gamepad_button_check_pressed(0, gp_face3)) && global.pause = 0)
 {textment = true;}
 
 if(destroyme == true)

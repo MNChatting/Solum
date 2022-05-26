@@ -13,6 +13,8 @@ if((keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(0, gp_face3)) 
 	textstart = false;
 	textment = false;
 	global.pause = 0;
+	global.textbox = false;
+	
 	
 	element4.typewriter_reset()
 	
