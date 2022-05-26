@@ -1,7 +1,7 @@
 if(readonce == false)
 {
 text = 
-"[#252525]seeing the watery grave below you the mole [rainbow][shake]tenderly[/shake][/rainbow] takes your hand and teach you to swim"
+"[#252525]What's this? Some kind of upgrade?[pause]The description on the box says it allows the user to [wave]dash[/wave] forward. That should be useful."
 
 profile  = "[sPopCat]"
 }

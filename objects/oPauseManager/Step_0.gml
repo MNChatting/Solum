@@ -34,7 +34,8 @@ if(global.unpause)
 		global.unpause = 0;
 		menuOpen = !menuOpen
 	}
-	
+
+if(global.pause = 1){
 	//controller up, everything should be NEGATIVE
 if (gamepad_button_check_pressed(0, gp_padu) || keyboard_check_pressed(vk_up))
 {
@@ -43,6 +44,7 @@ if (gamepad_button_check_pressed(0, gp_padu) || keyboard_check_pressed(vk_up))
 		ishigh = ishigh - 1;
 		show_debug_message(ishigh)
 		global.highy = global.highy - 300
+		audio_play_sound(ButtonSelect,1,false);
 	}
 }
 //controller down, everything should be POSITIVE
@@ -53,5 +55,7 @@ if (gamepad_button_check_pressed(0, gp_padd) || keyboard_check_pressed(vk_down))
 		ishigh = ishigh + 1;
 		show_debug_message(ishigh)
 		global.highy = global.highy + 300
+		audio_play_sound(ButtonSelect,1,false);
 	}
+}
 }

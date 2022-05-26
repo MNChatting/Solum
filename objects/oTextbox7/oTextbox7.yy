@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sExclaim",
-    "path": "sprites/sExclaim/sExclaim.yy",
+    "name": "sSparkle",
+    "path": "sprites/sSparkle/sSparkle.yy",
   },
   "solid": false,
   "visible": true,

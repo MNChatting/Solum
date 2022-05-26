@@ -7,6 +7,7 @@ y = lerp(y, ystart -  highlight * 8, 0.1); //initial y position of the instance 
 
 // Click
 if (buttonpress && script >= 0) {
+	audio_play_sound(ButtonSelect2,1,false);
 	script_execute(script);
 }
 

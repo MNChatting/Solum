@@ -19,7 +19,7 @@ var onGround = place_meeting(x,y+1,ointeractController);
 
 var dash = keyboard_check_pressed(ord("Q")) ||  gamepad_button_check_pressed(0, gp_face2);
 
-var InWater = place_meeting(x,y-16,oWater);
+var InWater = place_meeting(x,y-32,oWater);
 var onSlide = place_meeting(x,y+2,oSlide);
 
 var Death = place_meeting(x,y+1,oDeath);
@@ -54,7 +54,10 @@ if (dashunlocked == true)
  mollystopper = false;
  
  if(lastpressed = "left")
- {sprite_index = sPlayerDashL;}
+ {
+	 sprite_index = sPlayerDashL;
+	 
+ }
  
   if(lastpressed = "right")
   {sprite_index = sPlayerDashR;}
@@ -68,7 +71,9 @@ if (onGround = 1 && move = 0 && lastpressed = "right")
 	if (onGround = 1 && move = 0 && lastpressed = "left")
 { image_angle = 0;
 	sprite_index = sPlayerIdleL;}
-	
+
+if(global.textbox = false)
+{
 if(onGround = 1 && move = 1)
 { image_angle = 0;
 	sprite_index = sPlayerWalkinR;}
@@ -76,7 +81,7 @@ if(onGround = 1 && move = 1)
 if(onGround = 1 && move = -1)
 { image_angle = 0;
 	sprite_index = sPlayerWalkinL;}
-	
+}	
 if(onWall = 1 && onGround = 0 && lastpressed = "left" && sprite_index != sPlayerSlide)
 {	image_angle = 0;
 	sprite_index = sPlayerWallL;}
@@ -93,13 +98,19 @@ if(!onWallExtra = 1 && !onGround = 1 && sprite_index = sPlayerWallR)
 if(InWater = 1 && swimunlocked == true)
 {	image_angle = 0;
 	sprite_index = sPlayerSwim;
-	vsp = vsp - 1;
-	vsp = min(vsp - 0.5, 2)
+	//vsp = vsp - 1;
+	vsp = min(vsp - 0.5, 1.5)
 	jumps = 0;
 }
 //----------------------------------------------------------------
 if(place_meeting(x,y+1,oUnlockSwim))
 { swimunlocked = true; }
+
+if(place_meeting(x,y+1,oUnlockDash))
+{ dashunlocked = true; }
+
+if(place_meeting(x,y+1,oUnlockDouble))
+{ jumpsunlocked = true; }
 //----------------------------------------------------------------
 if(Respawn = 1)
 {respawn_x = x; respawn_y = y;}
@@ -110,7 +121,7 @@ if (Death = 1)
  hsp = 0;
  vsp = 0;
 
-	if(image_index > 8)
+	if(image_index > 5)
 	{
 	x = respawn_x;
 	y = respawn_y;

@@ -8,5 +8,5 @@ draw_set_alpha(1);
 	camX = camera_get_view_x(view_camera[0])
     camY = camera_get_view_y(view_camera[0])
 	
-	scribble("[#FFFFFF][scale,1.5][fa_centre][fa_middle][pulse]Game Pause").draw(camX + 400,camY + 225);
+	scribble("[#FFFFFF][scale,1.5][fa_centre][fa_middle][pulse]Game Pause").draw(camX + 400,camY + 25);
 }
