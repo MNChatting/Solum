@@ -20,9 +20,5 @@ respawn_x = x;
 respawn_y = y;
 dying = false;
 
-jumpsunlocked = false;
-dashunlocked = false;
-swimunlocked = false;
-
 room_speed = 60;
 timer = room_speed;

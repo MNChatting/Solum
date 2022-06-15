@@ -46,7 +46,7 @@ else if (onWall != 0) {vsp = min(vsp + 0.2, 3);}
 else if (InWater != 0) {vsp = min(vsp + 0.2, 5);}
 else {vsp = vsp + grv;}
 
-if (dashunlocked == true)
+if (global.dashunlocked == true)
 {if (dash && mollystopper = true && jacobstopper = true && move != 0)
 {dashduration = 10;
  hsp = move * dashspd;
@@ -95,22 +95,30 @@ if(!onWall = 1 && !onGround = 1 && sprite_index = sPlayerWallL)
 if(!onWallExtra = 1 && !onGround = 1 && sprite_index = sPlayerWallR)
 {sprite_index = sPlayerJumpR;}
 
-if(InWater = 1 && swimunlocked == true)
+if(InWater = 1 && global.swimunlocked == true)
 {	image_angle = 0;
-	sprite_index = sPlayerSwim;
+	
+if(lastpressed = "left")
+ {sprite_index = sPlayerSwimL;}
+  if(lastpressed = "right")
+  {sprite_index = sPlayerSwimR;}
+	
 	//vsp = vsp - 1;
 	vsp = min(vsp - 0.5, 1.5)
 	jumps = 0;
 }
 //----------------------------------------------------------------
 if(place_meeting(x,y+1,oUnlockSwim))
-{ swimunlocked = true; }
+{ global.swimunlocked = true; 
+	instance_destroy(oUnlockSwim)}
 
 if(place_meeting(x,y+1,oUnlockDash))
-{ dashunlocked = true; }
+{ global.dashunlocked = true;
+	instance_destroy(oUnlockDash)}
 
 if(place_meeting(x,y+1,oUnlockDouble))
-{ jumpsunlocked = true; }
+{ global.jumpsunlocked = true;
+	instance_destroy(oUnlockDouble)}
 //----------------------------------------------------------------
 if(Respawn = 1)
 {respawn_x = x; respawn_y = y;}
@@ -126,6 +134,7 @@ if (Death = 1)
 	x = respawn_x;
 	y = respawn_y;
 	dying = false;
+	instance_create_layer(0,0,"Fade", oFade);
 	}
 }
 //----------------------------------------------------------------
@@ -154,7 +163,7 @@ if (mvtlock <= 0 && dashduration <= 0 && global.pause == 0 && dying == false) //
 		if(lastpressed = "right")
 		{sprite_index = sPlayerJumpR;}
 		//----------------------------------------------------------------
-		if (jumpsunlocked = true)
+		if (global.jumpsunlocked = true)
 		{ if (jumps = 1)
 		   {vsp = -8;
 			jumps = 2;

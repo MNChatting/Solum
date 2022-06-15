@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "sRoomChange",
-    "path": "sprites/sRoomChange/sRoomChange.yy",
+    "name": "sAmazon",
+    "path": "sprites/sAmazon/sAmazon.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

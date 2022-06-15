@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sMarvin",
-    "path": "sprites/sMarvin/sMarvin.yy",
+    "name": "sFloaties",
+    "path": "sprites/sFloaties/sFloaties.yy",
   },
   "solid": false,
   "visible": true,
