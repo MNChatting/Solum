@@ -1,1 +1,1 @@
-room_goto(Apartment2)
+room_goto(Apartment2BACK)

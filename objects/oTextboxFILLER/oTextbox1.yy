@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "sRoomChange",
-    "path": "sprites/sRoomChange/sRoomChange.yy",
+    "name": "sExclaim",
+    "path": "sprites/sExclaim/sExclaim.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oTextController",
+    "path": "objects/oTextController/oTextController.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -26,11 +29,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "RoomChnages",
-    "path": "folders/Objects/RoomChnages.yy",
+    "name": "Textboxes",
+    "path": "folders/Objects/Textboxes.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oEnd",
+  "name": "oTextbox1",
   "tags": [],
   "resourceType": "GMObject",
 }
