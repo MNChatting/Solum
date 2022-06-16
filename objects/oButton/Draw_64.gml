@@ -9,8 +9,7 @@ draw_roundrect(x, y, x + width, y + height, 0);
 //draw_rectangle(900,global.highy,950,global.highy + 50,0)
 
 // Draw text
-scribble(text).draw(x + width/2, y + height/2, text);
-
+scribble(text).draw(x + width/2, y + height/2);
 
 // Reset color
 draw_set_color(c_white);

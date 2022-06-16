@@ -1,12 +1,13 @@
 menuOpen = false;
-scribble_font_add("fCozette");
 
-addthis = 64;
 global.pause = 0;
 global.unpause = false;
 global.highy = 288;
 global.textbox = false;
 pressedpause = false;
+
+	camX = camera_get_view_x(view_camera[0])
+    camY = camera_get_view_y(view_camera[0])
 
 ishigh = 1;
 

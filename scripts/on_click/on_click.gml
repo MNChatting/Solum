@@ -1,7 +1,5 @@
 function on_click() {
 	
-show_debug_message("Button clicked: " + text);	
-	
 if(global.highy = 288)
 	{global.unpause = true;}
 	

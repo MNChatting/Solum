@@ -6,7 +6,7 @@ textstart = false;
 destroyme = false;
 readonce = false;
 
-scribble_font_add("fCozette");
+scribble_font_set_default("fCozette");
 
 textboxsprite = scribble("[scale,2][sTextBox][/scale]");
 textprofilesprite = scribble("[sTextProfile]");

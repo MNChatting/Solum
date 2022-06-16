@@ -1,5 +1,5 @@
 /// @description 
-if(((keyboard_check_pressed(vk_escape)) || (gamepad_button_check_pressed(0, gp_start))) && global.textbox == false)
+if(((keyboard_check_pressed(vk_shift)) || (gamepad_button_check_pressed(0, gp_start))) && global.textbox == false)
 {
 	menuOpen = !menuOpen;
 	
@@ -14,12 +14,15 @@ else {global.pause = 0;
 	
 	var _width = 600;
     var _height = 200;
+	addthis = 64;
+	
+	scribble_font_set_default("fCozette");
 
-	create_button(640, 180 + addthis, _width, _height, "[#252525][scale,2][fa_centre][fa_middle]Resume", on_click); // <- Do not include ()
+	create_button(640, 180 + addthis, _width, _height,"[#252525][scale,2][fa_centre][fa_middle]Resume", on_click); // <- Do not include ()
 
-	create_button(640, 450 + addthis, _width, _height, "[#252525][scale,2][fa_centre][fa_middle]Reset", on_click);
+	create_button(640, 450 + addthis, _width, _height,"[#252525][scale,2][fa_centre][fa_middle]Reset", on_click);
 
-	create_button(640, 720 + addthis, _width, _height, "[#252525][scale,2][fa_centre][fa_middle]Quit", on_click);
+	create_button(640, 720 + addthis, _width, _height,"[#252525][scale,2][fa_centre][fa_middle]Quit", on_click);
 	
 	
 	}
